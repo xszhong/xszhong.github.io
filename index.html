@@ -2,6 +2,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
+<script type="text/javascript">
+	function show(source, dest){
+		if(dest.source == source){
+			dest.innerHTML = null;
+			dest.source = null;
+		}else{
+			dest.innerHTML = source.innerHTML;
+			dest.source = source;
+		}
+		dest.blur();
+	}
+</script>
 <title>Xiaoshi Zhong</title>
 </head>
 <body>
@@ -43,7 +55,7 @@
 				<li style="margin-bottom:10px">Nanyang Technological University, Singapore
 					<ul>
 						<li>Ph.D. Student, Computer Science and Engineering</li>
-							Advisor: Prof. <a href="http://sentic.net/erikcambria/" style="text-decoration:none" target="_blank">Erik Cambria</a>
+							Advisor: Prof. <a href="http://sentic.net/erikcambria/" style="text-decoration:none;color:blue" target="_blank">Erik Cambria</a>
 					</ul>
 				</li>
 				<li style="margin-bottom:10px">China Agricutural University, China
@@ -98,14 +110,14 @@
 					<b>Time Expression Recognition Using a Time-related Tagging Scheme</b>.
 					In <i> Proceedings of the 27th International World Wide Web Conference</i> (WWW), 2018.
 					Research track paper and the acceptance rate is 14.8% (171/1155).
-					[<a href="publications/TOMN-WWW2018-Zhong&Cambria.pdf" style="text-decoration:none" target="_blank">pdf</a>]
+					[<a href="publications/TOMN-WWW2018-Zhong&Cambria.pdf" style="text-decoration:none;color:blue" target="_blank">pdf</a>]
 				</li>
 				<li style="margin-bottom:10px">
 					Xiaoshi Zhong, Aixin Sun, and Erik Cambria.
 					<b>Time Expression Analysis and Recognition Using Syntactic Token Types and General Heuristic Rules</b>.
 					In <i>Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics</i> (ACL), pages 420-429, 2017.
 					Full oral paper and the full oral rate is 15.6% (117/751).
-					[<a href="publications/SynTime-ACL2017-ZhongEtal.pdf" style="text-decoration:none" target="_blank">pdf</a>][<a href="https://github.com/xszhong/syntime" style="text-decoration: none" target="_blank">code</a>][<a href="slides/SynTime-ACL2017-ZhongEtal-Slides.pdf" style="text-decoration: none" target="_blank">slides</a>][<a href="posts/gratitude.html" style="text-decoration: none" target="_blank">gratitude</a>]
+					[<a href="publications/SynTime-ACL2017-ZhongEtal.pdf" style="text-decoration:none;color:blue" target="_blank">pdf</a>][<a href="https://github.com/xszhong/syntime" style="text-decoration:none;color:blue" target="_blank">code</a>][<a href="slides/SynTime-ACL2017-ZhongEtal-Slides.pdf" style="text-decoration:none;color:blue" target="_blank">slides</a>][<a href="posts/gratitude.html" style="text-decoration:none;color:blue" target="_blank">gratitude</a>]
 				</li>				
 				</ul>
 			</font></td>
@@ -161,15 +173,19 @@
 		<tr>
 			<td align="justify"><font size="4">
 				<ul>
-				<li style="margin-bottom:10px">Seed achievement
-				<br>In my Senior High School Entrance Examination, within Sanya City, I am the only one who gets full score in Math.
-				I achieve that full score with only the Math textbooks from my primary school and junior high school.
-				In that year (初三那年), I encounter my <a href="pictures/thatYear.jpg" style="text-decoration:none" target="_blank">head teacher</a> of class (班主任, 教物理); she trusts me, leading me to keep staying in school and feel interesting to study.
-				That year changes my trajectory.
 				</li>
 				<li style="margin-bottom:10px">
 				Hong Kong "Chong Zheng" scholarship, 2011
 				</li>
+				<li style="margin-bottom:10px">
+					<a href="javascript:show(seedSource, seedDest);" style="text-decoration:none;color:black">Seed Achievement</a>
+					<div id="seedSource" style="display:none">
+					In my Senior High School Entrance Examination, in Sanya City, I am the only one who gets full score in Math.
+					I achieve that full score with only the Math textbooks from my primary school and junior high school.
+					In that year (初三那年), I encounter my <a href="pictures/thatYear.jpg" style="text-decoration:none;color:blue" target="_blank">head teacher</a> of class (班主任, 教物理); she trusts me, leading me to keep staying in school and feel interesting to study.
+					That year changes my trajectory.
+					</div>
+					<div id="seedDest"></div>
 				</ul>
 			</font></td>
 		</tr>
@@ -184,7 +200,7 @@
 		</tr>
 		<tr>
 			<td align="justify"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;
-				From Oct. 2013 to Jan. 2016, I work as research assistant at Hong Kong University of Science and Technology and research associate at City University of Hong Kong, both with Prof. <a href="http://personal.cb.cityu.edu.hk/jeffhong/" style="text-decoration:none" target="_blank">Jeff Hong</a> (Chair Professor).
+				From Oct. 2013 to Jan. 2016, I work as research assistant at Hong Kong University of Science and Technology and research associate at City University of Hong Kong, both with Prof. <a href="http://personal.cb.cityu.edu.hk/jeffhong/" style="text-decoration:none;color:blue" target="_blank">Jeff Hong</a> (Chair Professor).
 				<br>&nbsp;&nbsp;&nbsp;&nbsp;
 				Before trained by Jeff, I work as an engineer; after that training, I think like a scientist.
 			</font></td>
